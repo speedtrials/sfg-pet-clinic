@@ -9,7 +9,12 @@ public class IndexController {
     @RequestMapping({"", "/", "index", "index.html"})
     public String index()
     {
-        System.out.println("Hey index");
         return "index";
+    }
+
+
+    @RequestMapping("/oups")
+    public String oupsHandler() {
+        return "notimplemented";
     }
 }
