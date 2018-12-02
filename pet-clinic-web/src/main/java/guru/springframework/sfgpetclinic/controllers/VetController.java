@@ -5,6 +5,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+/**
+ * Created by jt on 7/22/18.
+ */
 @Controller
 public class VetController {
 
@@ -15,8 +18,10 @@ public class VetController {
     }
 
     @RequestMapping({"/vets", "/vets/index", "/vets/index.html"})
-    public String listVets(Model model) {
+    public String listVets(Model model){
+        System.out.println(vetService.getClass());
         model.addAttribute("vets", vetService.findAll());
+
         return "vets/index";
     }
 }

@@ -20,8 +20,8 @@
 
     <dependencies>
         <dependency>
-            <artifactId>pet-clinic-data</artifactId>
             <groupId>guru.springframework</groupId>
+            <artifactId>pet-clinic-data</artifactId>
             <version>0.0.5-SNAPSHOT</version>
         </dependency>
 
